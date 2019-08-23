@@ -107,7 +107,11 @@ public class DateAndPlaceOfBirth {
 	 */
 	public boolean hasSameBirthDayAs(DateAndPlaceOfBirth other) {
   //TODO complete this method
-  }
+		if((dateOfBirth.getDayOfYear() == other.getDateOfBirth().getDayOfYear){
+			return true;
+		}
+		return false;
+	}
 	@Override
 	public String toString() {
 		return "Date and place of birth: " + dateOfBirth + ", " + placeOfBirth;

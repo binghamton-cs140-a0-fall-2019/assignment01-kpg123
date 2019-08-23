@@ -50,6 +50,12 @@ public class Person {
 	public String getLastNames() {
 		return lastNames;
 	}
+	public DateAndPlaceOfBirth getDAPOB(){
+		return placeDob;
+	}
+	public StreetUSAddress(){
+		return address;
+	}
 	/**
 	 * 
 	 * @return
@@ -61,6 +67,10 @@ public class Person {
 // or
 		return String.format("%03d-%02d-%04d", ssn/1000000,ssn%1000000/10000, ssn%10000); 
 
+	}
+	public String toString(){
+		String info = firstNames + lastNames + ssn + ",\n" + address.toString();
+		return info;
 	}
 // TODO provide the getter methods for placeDob and address 
 // TODO Override the public String toString() method that is similar to the 
