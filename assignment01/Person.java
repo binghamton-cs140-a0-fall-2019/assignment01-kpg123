@@ -53,7 +53,7 @@ public class Person {
 	public DateAndPlaceOfBirth getDAPOB(){
 		return placeDob;
 	}
-	public StreetUSAddress(){
+	public StreetUSAddress getAddress(){
 		return address;
 	}
 	/**
