@@ -1,0 +1,154 @@
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+
+TESTS FOR Computer.java:
+Dell, i7, 8GB Memory, 1.0TB Solid State Drive, Price: $750.00 
+HP, i5, 16GB Memory, 500GB Hard Drive, Price: $500.00 
+Mac, Apple Cpu, 12GB Memory, 1.3TB Solid State Drive, Price: $1000.00 
+Chromebook, Potato, 4GB Memory, 250GB Hard Drive, Price: $200.00 
+
+TESTS FOR DateAndPlaceOfBirth.java:
+Date and place of birth: 2004-01-04, Chicago, Illinois, United States
+Date and place of birth: 1961-08-30, New York City, New York, United States
+Date and place of birth: 2004-01-04, Los Angles, California, United States
+Date and place of birth: 1980-01-04, Manchester, United Kingdom
+Date and place of birth: 1972-06-15, Hamburg, Germany
+false
+false
+false
+false
+false
+true
+false
+true
+true
+true
+false
+false
+false
+false
+false
+true
+false
+true
+false
+false
+true
+false
+true
+true
+false
+
+false
+true
+false
+true
+true
+false
+false
+false
+false
+false
+false
+true
+false
+true
+true
+false
+true
+false
+false
+true
+
+true
+false
+true
+false
+false
+false
+true
+false
+false
+false
+true
+false
+true
+false
+false
+false
+false
+false
+true
+false
+false
+false
+false
+false
+true
+
+true
+false
+true
+true
+false
+false
+true
+false
+false
+false
+true
+false
+true
+true
+false
+true
+false
+true
+true
+false
+false
+false
+false
+false
+true
+
+
+TESTS FOR DateAndPlaceOfBirth.java:
+JamesCharles145335679,
+30 Main Street
+2 Maple Street
+Chicago, Illinois 60007

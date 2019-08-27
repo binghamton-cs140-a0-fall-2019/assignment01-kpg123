@@ -1,0 +1,236 @@
+package assignment01;
+import java.io.*;
+public class PlaceDOBTester{
+	public static void main(String[] args){
+		DateAndPlaceOfBirth x0 = new DateAndPlaceOfBirth(2004, 1, 4, "Chicago", "Illinois", "United States");
+		DateAndPlaceOfBirth x1 = new DateAndPlaceOfBirth(1961, 8, 30, "New York City", "New York", "United States");
+		DateAndPlaceOfBirth x2 = new DateAndPlaceOfBirth(2004, 1, 4, "Los Angles", "California", "United States");
+		DateAndPlaceOfBirth x3 = new DateAndPlaceOfBirth(1980, 1, 4, "Manchester", "United Kingdom");
+		DateAndPlaceOfBirth x4 = new DateAndPlaceOfBirth(1972, 6, 15, "Hamburg", "Germany");
+	
+		System.out.println(x0);
+		System.out.println(x1);
+		System.out.println(x2);
+		System.out.println(x3);
+		System.out.println(x4);
+		System.out.println(x0.olderThan(x0)); 
+		System.out.println(x0.olderThan(x1)); 
+		System.out.println(x0.olderThan(x2)); 
+		System.out.println(x0.olderThan(x3));  
+		System.out.println(x0.olderThan(x4)); 
+		System.out.println(x1.olderThan(x0)); 
+		System.out.println(x1.olderThan(x1)); 
+		System.out.println(x1.olderThan(x2)); 
+		System.out.println(x1.olderThan(x3)); 
+		System.out.println(x1.olderThan(x4)); 
+		System.out.println(x2.olderThan(x0)); 
+		System.out.println(x2.olderThan(x1));
+		System.out.println(x2.olderThan(x2));
+		System.out.println(x2.olderThan(x3));
+		System.out.println(x2.olderThan(x4));
+		System.out.println(x3.olderThan(x0));
+		System.out.println(x3.olderThan(x1));
+		System.out.println(x3.olderThan(x2));
+		System.out.println(x3.olderThan(x3));
+		System.out.println(x3.olderThan(x4));
+		System.out.println(x4.olderThan(x0));
+		System.out.println(x4.olderThan(x1));
+		System.out.println(x4.olderThan(x2));
+		System.out.println(x4.olderThan(x3));
+		System.out.println(x4.olderThan(x4) + "\n");
+		
+		
+		System.out.println(x0.youngerThan(x0));
+		System.out.println(x0.youngerThan(x1));
+		System.out.println(x0.youngerThan(x2));
+		System.out.println(x0.youngerThan(x3));
+		System.out.println(x0.youngerThan(x4));
+		System.out.println(x1.youngerThan(x0));
+		System.out.println(x1.youngerThan(x1));
+		System.out.println(x1.youngerThan(x2));
+		System.out.println(x1.youngerThan(x3));
+		System.out.println(x1.youngerThan(x4));
+		System.out.println(x2.youngerThan(x0));
+		System.out.println(x2.youngerThan(x1));
+		System.out.println(x2.youngerThan(x2));
+		System.out.println(x2.youngerThan(x3));
+		System.out.println(x2.youngerThan(x4));
+		System.out.println(x3.youngerThan(x0));
+		System.out.println(x3.youngerThan(x1));
+		System.out.println(x3.youngerThan(x2));
+		System.out.println(x3.youngerThan(x3));
+		System.out.println(x3.youngerThan(x4) + "\n");
+		
+		System.out.println(x0.hasSameBirthDateAs(x0));
+		System.out.println(x0.hasSameBirthDateAs(x1));
+		System.out.println(x0.hasSameBirthDateAs(x2));
+		System.out.println(x0.hasSameBirthDateAs(x3));
+		System.out.println(x0.hasSameBirthDateAs(x4));
+		System.out.println(x1.hasSameBirthDateAs(x0));
+		System.out.println(x1.hasSameBirthDateAs(x1));
+		System.out.println(x1.hasSameBirthDateAs(x2));
+		System.out.println(x1.hasSameBirthDateAs(x3));
+		System.out.println(x1.hasSameBirthDateAs(x4));
+		System.out.println(x2.hasSameBirthDateAs(x0));
+		System.out.println(x2.hasSameBirthDateAs(x1));
+		System.out.println(x2.hasSameBirthDateAs(x2));
+		System.out.println(x2.hasSameBirthDateAs(x3));
+		System.out.println(x2.hasSameBirthDateAs(x4));
+		System.out.println(x3.hasSameBirthDateAs(x0));
+		System.out.println(x3.hasSameBirthDateAs(x1));
+		System.out.println(x3.hasSameBirthDateAs(x2));
+		System.out.println(x3.hasSameBirthDateAs(x3));
+		System.out.println(x3.hasSameBirthDateAs(x4));
+		System.out.println(x4.hasSameBirthDateAs(x0));
+		System.out.println(x4.hasSameBirthDateAs(x1));
+		System.out.println(x4.hasSameBirthDateAs(x2));
+		System.out.println(x4.hasSameBirthDateAs(x3));
+		System.out.println(x4.hasSameBirthDateAs(x4) + "\n");
+		
+		System.out.println(x0.hasSameBirthDayAs(x0));
+		System.out.println(x0.hasSameBirthDayAs(x1));
+		System.out.println(x0.hasSameBirthDayAs(x2));
+		System.out.println(x0.hasSameBirthDayAs(x3));
+		System.out.println(x0.hasSameBirthDayAs(x4));
+		System.out.println(x1.hasSameBirthDayAs(x0));
+		System.out.println(x1.hasSameBirthDayAs(x1));
+		System.out.println(x1.hasSameBirthDayAs(x2));
+		System.out.println(x1.hasSameBirthDayAs(x3));
+		System.out.println(x1.hasSameBirthDayAs(x4));
+		System.out.println(x2.hasSameBirthDayAs(x0));
+		System.out.println(x2.hasSameBirthDayAs(x1));
+		System.out.println(x2.hasSameBirthDayAs(x2));
+		System.out.println(x2.hasSameBirthDayAs(x3));
+		System.out.println(x2.hasSameBirthDayAs(x4));
+		System.out.println(x3.hasSameBirthDayAs(x0));
+		System.out.println(x3.hasSameBirthDayAs(x1));
+		System.out.println(x3.hasSameBirthDayAs(x2));
+		System.out.println(x3.hasSameBirthDayAs(x3));
+		System.out.println(x3.hasSameBirthDayAs(x4));
+		System.out.println(x4.hasSameBirthDayAs(x0));
+		System.out.println(x4.hasSameBirthDayAs(x1));
+		System.out.println(x4.hasSameBirthDayAs(x2));
+		System.out.println(x4.hasSameBirthDayAs(x3));
+		System.out.println(x4.hasSameBirthDayAs(x4) + "\n");
+		try(var output =new PrintWriter(new FileOutputStream(
+			    new File("output.txt"), true /* true means append to file */))) {
+			output.println("\nTESTS FOR DateAndPlaceOfBirth.java:");
+			DateAndPlaceOfBirth x02 = new DateAndPlaceOfBirth(2004, 1, 4, "Chicago", "Illinois", "United States");
+		DateAndPlaceOfBirth x12 = new DateAndPlaceOfBirth(1961, 8, 30, "New York City", "New York", "United States");
+		DateAndPlaceOfBirth x22 = new DateAndPlaceOfBirth(2004, 1, 4, "Los Angles", "California", "United States");
+		DateAndPlaceOfBirth x32 = new DateAndPlaceOfBirth(1980, 1, 4, "Manchester", "United Kingdom");
+		DateAndPlaceOfBirth x42 = new DateAndPlaceOfBirth(1972, 6, 15, "Hamburg", "Germany");
+	
+		output.println(x02);
+		output.println(x12);
+		output.println(x22);
+		output.println(x32);
+		output.println(x42);
+		output.println(x02.olderThan(x02)); 
+		output.println(x02.olderThan(x12)); 
+		output.println(x02.olderThan(x22)); 
+		output.println(x02.olderThan(x32));  
+		output.println(x02.olderThan(x42)); 
+		output.println(x12.olderThan(x02)); 
+		output.println(x12.olderThan(x12)); 
+		output.println(x12.olderThan(x22)); 
+		output.println(x12.olderThan(x32)); 
+		output.println(x12.olderThan(x42)); 
+		output.println(x22.olderThan(x02)); 
+		output.println(x22.olderThan(x12));
+		output.println(x22.olderThan(x22));
+		output.println(x22.olderThan(x32));
+		output.println(x22.olderThan(x42));
+		output.println(x32.olderThan(x02));
+		output.println(x32.olderThan(x12));
+		output.println(x32.olderThan(x22));
+		output.println(x32.olderThan(x32));
+		output.println(x32.olderThan(x42));
+		output.println(x42.olderThan(x02));
+		output.println(x42.olderThan(x12));
+		output.println(x42.olderThan(x22));
+		output.println(x42.olderThan(x32));
+		output.println(x42.olderThan(x42) + "\n");
+		
+		
+		output.println(x02.youngerThan(x02));
+		output.println(x02.youngerThan(x12));
+		output.println(x02.youngerThan(x22));
+		output.println(x02.youngerThan(x32));
+		output.println(x02.youngerThan(x42));
+		output.println(x12.youngerThan(x02));
+		output.println(x12.youngerThan(x12));
+		output.println(x12.youngerThan(x22));
+		output.println(x12.youngerThan(x32));
+		output.println(x12.youngerThan(x42));
+		output.println(x22.youngerThan(x02));
+		output.println(x22.youngerThan(x12));
+		output.println(x22.youngerThan(x22));
+		output.println(x22.youngerThan(x32));
+		output.println(x22.youngerThan(x42));
+		output.println(x32.youngerThan(x02));
+		output.println(x32.youngerThan(x12));
+		output.println(x32.youngerThan(x22));
+		output.println(x32.youngerThan(x32));
+		output.println(x32.youngerThan(x42) + "\n");
+		
+		output.println(x02.hasSameBirthDateAs(x02));
+		output.println(x02.hasSameBirthDateAs(x12));
+		output.println(x02.hasSameBirthDateAs(x22));
+		output.println(x02.hasSameBirthDateAs(x32));
+		output.println(x02.hasSameBirthDateAs(x42));
+		output.println(x12.hasSameBirthDateAs(x02));
+		output.println(x12.hasSameBirthDateAs(x12));
+		output.println(x12.hasSameBirthDateAs(x22));
+		output.println(x12.hasSameBirthDateAs(x32));
+		output.println(x12.hasSameBirthDateAs(x42));
+		output.println(x22.hasSameBirthDateAs(x02));
+		output.println(x22.hasSameBirthDateAs(x12));
+		output.println(x22.hasSameBirthDateAs(x22));
+		output.println(x22.hasSameBirthDateAs(x32));
+		output.println(x22.hasSameBirthDateAs(x42));
+		output.println(x32.hasSameBirthDateAs(x02));
+		output.println(x32.hasSameBirthDateAs(x12));
+		output.println(x32.hasSameBirthDateAs(x22));
+		output.println(x32.hasSameBirthDateAs(x32));
+		output.println(x32.hasSameBirthDateAs(x42));
+		output.println(x42.hasSameBirthDateAs(x02));
+		output.println(x42.hasSameBirthDateAs(x12));
+		output.println(x42.hasSameBirthDateAs(x22));
+		output.println(x42.hasSameBirthDateAs(x32));
+		output.println(x42.hasSameBirthDateAs(x42) + "\n");
+		
+		output.println(x02.hasSameBirthDayAs(x02));
+		output.println(x02.hasSameBirthDayAs(x12));
+		output.println(x02.hasSameBirthDayAs(x22));
+		output.println(x02.hasSameBirthDayAs(x32));
+		output.println(x02.hasSameBirthDayAs(x42));
+		output.println(x12.hasSameBirthDayAs(x02));
+		output.println(x12.hasSameBirthDayAs(x12));
+		output.println(x12.hasSameBirthDayAs(x22));
+		output.println(x12.hasSameBirthDayAs(x32));
+		output.println(x12.hasSameBirthDayAs(x42));
+		output.println(x22.hasSameBirthDayAs(x02));
+		output.println(x22.hasSameBirthDayAs(x12));
+		output.println(x22.hasSameBirthDayAs(x22));
+		output.println(x22.hasSameBirthDayAs(x32));
+		output.println(x22.hasSameBirthDayAs(x42));
+		output.println(x32.hasSameBirthDayAs(x02));
+		output.println(x32.hasSameBirthDayAs(x12));
+		output.println(x32.hasSameBirthDayAs(x22));
+		output.println(x32.hasSameBirthDayAs(x32));
+		output.println(x32.hasSameBirthDayAs(x42));
+		output.println(x42.hasSameBirthDayAs(x02));
+		output.println(x42.hasSameBirthDayAs(x12));
+		output.println(x42.hasSameBirthDayAs(x22));
+		output.println(x42.hasSameBirthDayAs(x32));
+		output.println(x42.hasSameBirthDayAs(x42) + "\n");
+
+		//Copy all your lines above, add an extra "2" to every variable name
+		// and replace every System.out.print or System.out.println
+		// by output.print or output.println
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+}
