@@ -69,7 +69,7 @@ public class Person {
 
 	}
 	public String toString(){
-		String info = firstNames + lastNames + ssn + ",\n" + address.toString();
+		String info = firstNames +" "+ lastNames+ " " + ssn + ",\n" + address.toString();
 		return info;
 	}
 // TODO provide the getter methods for placeDob and address 

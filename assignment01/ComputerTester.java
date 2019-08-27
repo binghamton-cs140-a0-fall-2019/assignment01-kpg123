@@ -19,6 +19,14 @@ public class ComputerTester {
 		try(var output =new PrintWriter(new FileOutputStream(
 			    new File("output.txt"), true /* true means append to file */))) {
 			output.println("\nTESTS FOR Computer.java:");
+			Computer Dell2 = new Computer("Dell", "i7", 8, 1000, true, 750);
+			Computer HP2 = new Computer("HP", "i5", 16, 500, false, 500);
+			Computer Mac2 = new Computer("Mac", "Apple Cpu", 12, 1250,true, 1000);
+			Computer Chromebook2 = new Computer("Chromebook", "Potato", 4, 250, false, 200);
+			output.println(Dell2);
+			output.println(HP2);
+			output.println(Mac2);
+			output.println(Chromebook2);
 		//Copy all your lines above, add an extra "2" to every variable name
 		// and replace every System.out.print or System.out.println
 		// by output.print or output.println
